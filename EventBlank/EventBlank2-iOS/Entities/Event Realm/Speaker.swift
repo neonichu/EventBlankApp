@@ -8,8 +8,12 @@
 
 import Foundation
 import RealmSwift
+import ContentfulDeliveryAPI
 
-class Speaker: Object {
+class Speaker: Object, CDAPersistedEntry {
+    dynamic var identifier = ""
+    dynamic var speakerPhoto: Asset?
+
     dynamic var uuid = NSUUID().UUIDString
     
     dynamic var name = ""

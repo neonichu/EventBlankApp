@@ -8,8 +8,10 @@
 
 import Foundation
 import RealmSwift
+import ContentfulDeliveryAPI
 
-class Text: Object {
+class Text: Object, CDAPersistedEntry {
+    dynamic var identifier = ""
     
     dynamic var title = ""
     dynamic var content = ""

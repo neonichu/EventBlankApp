@@ -8,8 +8,10 @@
 
 import Foundation
 import RealmSwift
+import ContentfulDeliveryAPI
 
-class Track: Object {
+class Track: Object, CDAPersistedEntry {
+    dynamic var identifier = ""
     
     dynamic var track = ""
     dynamic var trackDescription = ""

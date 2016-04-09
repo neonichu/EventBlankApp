@@ -8,8 +8,11 @@
 
 import Foundation
 import RealmSwift
+import ContentfulDeliveryAPI
 
-class Session: Object {
+class Session: Object, CDAPersistedEntry {
+    dynamic var identifier = ""
+
     dynamic var uuid = NSUUID().UUIDString
     
     dynamic var title = ""

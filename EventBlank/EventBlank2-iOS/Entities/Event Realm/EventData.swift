@@ -12,6 +12,7 @@ import ContentfulDeliveryAPI
 
 class EventData: Object, CDAPersistedEntry {
     dynamic var identifier = ""
+    dynamic var eventLogo: Asset?
 
     dynamic var title = ""
     dynamic var subtitle = ""

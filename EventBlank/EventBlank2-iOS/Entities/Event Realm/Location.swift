@@ -8,8 +8,10 @@
 
 import Foundation
 import RealmSwift
+import ContentfulDeliveryAPI
 
-class Location: Object {
+class Location: Object, CDAPersistedEntry {
+    dynamic var identifier = ""
     
     dynamic var location = ""
     dynamic var locationDescription = ""
