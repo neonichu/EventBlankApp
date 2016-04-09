@@ -33,7 +33,7 @@ class MainViewModel: RxViewModel {
         super.init()
         
         // refresh events
-        [didBecomeActive.replaceWith(), fileReplaceEvent].toObservable()
+        [fileReplaceEvent].toObservable()
         .merge()
         .flatMapLatest({_ in
             return RealmProvider.eventRealm.objects(EventData).asObservable()
