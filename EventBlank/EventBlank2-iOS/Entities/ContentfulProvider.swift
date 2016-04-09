@@ -9,14 +9,14 @@ import ContentfulPersistence
 import RealmSwift
 
 class Asset: Object, CDAPersistedAsset {
-    var identifier: String!
-    var internetMediaType: String!
-    var url: String!
+    dynamic var identifier: String!
+    dynamic var internetMediaType: String!
+    dynamic var url: String!
 }
 
 class Space: Object, CDAPersistedSpace {
-    var lastSyncTimestamp: NSDate!
-    var syncToken: String!
+    dynamic var lastSyncTimestamp: NSDate!
+    dynamic var syncToken: String!
 }
 
 private class EventRealmManager: RealmManager {
