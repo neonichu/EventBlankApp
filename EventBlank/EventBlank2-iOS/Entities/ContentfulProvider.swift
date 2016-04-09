@@ -8,34 +8,20 @@
 import ContentfulPersistence
 import RealmSwift
 
-class Space: Object, CDAPersistedSpace {
-    var lastSyncTimestamp: NSDate!
-    var syncToken: String!
-}
-
 class Asset: Object, CDAPersistedAsset {
     var identifier: String!
     var internetMediaType: String!
     var url: String!
 }
 
-extension Object {
-    static func allObjects() -> NSArray {
-        let results = RealmProvider.eventRealm.objects(self)
-        return Array(results)
-    }
+class Space: Object, CDAPersistedSpace {
+    var lastSyncTimestamp: NSDate!
+    var syncToken: String!
 }
 
 private class EventRealmManager: RealmManager {
-    override var classForAssets: AnyClass {
-        get { return Asset.self }
-        set { }
-    }
-
-    override var classForSpaces: AnyClass {
-        get { return Space.self }
-        set { }
-    }
+    override var classForAssets: AnyClass { get { return Asset.self } set { } }
+    override var classForSpaces: AnyClass { get { return Space.self } set { } }
 
     func currentRealm() -> RLMRealm {
         if let path = RealmProvider.eventRealm.configuration.path {
@@ -43,6 +29,13 @@ private class EventRealmManager: RealmManager {
         }
 
         fatalError("Missing path to Realm")
+    }
+}
+
+extension Object {
+    static func allObjects() -> NSArray {
+        let results = RealmProvider.eventRealm.objects(self)
+        return Array(results)
     }
 }
 

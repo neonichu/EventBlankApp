@@ -15,4 +15,10 @@ class AppController {
     let reachability = try! Reachability(hostname: "google.com")
     let realm = RealmProvider()
     
+    let contentful = ContentfulProvider()
+
+    func start() {
+        contentful.sync()
+    }
+
 }

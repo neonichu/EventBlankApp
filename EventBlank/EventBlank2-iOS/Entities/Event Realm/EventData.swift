@@ -8,8 +8,10 @@
 
 import UIKit
 import RealmSwift
+import ContentfulDeliveryAPI
 
-class EventData: Object {
+class EventData: Object, CDAPersistedEntry {
+    dynamic var identifier = ""
 
     dynamic var title = ""
     dynamic var subtitle = ""

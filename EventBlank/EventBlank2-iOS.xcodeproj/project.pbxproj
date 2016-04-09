@@ -91,6 +91,7 @@
 		9CE743EB1C80CB9700D140A0 /* marin-conf.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CE743EA1C80CB9700D140A0 /* marin-conf.png */; };
 		9CF357831CAD97F900A1E223 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF357821CAD97F900A1E223 /* UITableView+Extensions.swift */; };
 		9CF357851CAD9A1000A1E223 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF357841CAD9A1000A1E223 /* UIStoryboard+Extensions.swift */; };
+		A19755EC1CB8663700E024F4 /* ContentfulProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19755EB1CB8663700E024F4 /* ContentfulProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,6 +194,7 @@
 		9CE743EA1C80CB9700D140A0 /* marin-conf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "marin-conf.png"; sourceTree = "<group>"; };
 		9CF357821CAD97F900A1E223 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		9CF357841CAD9A1000A1E223 /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
+		A19755EB1CB8663700E024F4 /* ContentfulProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentfulProvider.swift; sourceTree = "<group>"; };
 		AE9E084DFA39D7539307AA2A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18C4E7B5947C971EF3C2686 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -296,6 +298,7 @@
 			children = (
 				9C1F11721C7C6BDF009AFC2D /* App Realm */,
 				9C1F11711C7C6BCE009AFC2D /* Event Realm */,
+				A19755EB1CB8663700E024F4 /* ContentfulProvider.swift */,
 				9C1B20DD1C77C6F400DE7A1A /* RealmProvider.swift */,
 			);
 			path = Entities;
@@ -754,6 +757,7 @@
 				9C1B20F31C77C82800DE7A1A /* Notification.swift in Sources */,
 				9C1B20E61C77C7D800DE7A1A /* FilePath.swift in Sources */,
 				9C24D4E81C8399F400B1F0A2 /* MoreViewController.swift in Sources */,
+				A19755EC1CB8663700E024F4 /* ContentfulProvider.swift in Sources */,
 				9C1B20E11C77C71A00DE7A1A /* Config.swift in Sources */,
 				9C40B4641CB97C6100FDBF75 /* SessionDetailsViewController.swift in Sources */,
 				9CE69BCD1C89E1BE00CC283F /* AppController.swift in Sources */,

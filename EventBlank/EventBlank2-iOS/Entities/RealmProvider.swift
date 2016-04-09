@@ -57,7 +57,8 @@ class RealmProvider {
         case "appdata.realm":
             return [Favorites.self, ObjectId.self]
         default:
-            return [Session.self, EventData.self, Speaker.self, Location.self, Text.self, Track.self]
+            return [Session.self, EventData.self, Speaker.self, Location.self, Text.self, Track.self,
+                Space.self, Asset.self]
         }
     }
 }
