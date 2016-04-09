@@ -38,7 +38,8 @@ class MainViewModel: RxViewModel {
         .flatMapLatest({_ in
             return RealmProvider.eventRealm.objects(EventData).asObservable()
         })
-        .map({ results in results.first! })
+        .map({ results in results.first })
+        .unwrap()
         .subscribeNext({[unowned self] data in
             self.title.onNext(data.title)
             self.subtitle.onNext(data.subtitle)
