@@ -1,0 +1,1 @@
+../../../ContentfulDeliveryAPI/Code/CDAAsset+Private.h

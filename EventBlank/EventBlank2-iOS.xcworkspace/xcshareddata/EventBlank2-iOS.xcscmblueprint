@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EB4CC28CD8E666EFF6DA0AEAF402EFE73E96355F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DE506E4CFC3D6FB75AFC84D7DBA0623DE63AD4EE" : 0,
+    "EB4CC28CD8E666EFF6DA0AEAF402EFE73E96355F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B1284425-2814-4DF3-B3E0-467BFB53BAC7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DE506E4CFC3D6FB75AFC84D7DBA0623DE63AD4EE" : "..\/Projects\/contentful-persistence.objc",
+    "EB4CC28CD8E666EFF6DA0AEAF402EFE73E96355F" : "EventBlankApp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "EventBlank2-iOS",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "EventBlank\/EventBlank2-iOS.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:contentful\/contentful-persistence.objc.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DE506E4CFC3D6FB75AFC84D7DBA0623DE63AD4EE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:icanzilb\/EventBlankApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EB4CC28CD8E666EFF6DA0AEAF402EFE73E96355F"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+../../../ContentfulDeliveryAPI/Code/UIKit/CDAResourceTableViewCell.h

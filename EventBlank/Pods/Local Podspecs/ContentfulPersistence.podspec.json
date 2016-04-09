@@ -1,0 +1,49 @@
+{
+  "name": "ContentfulPersistence",
+  "version": "0.5.1",
+  "summary": "Simplified persistence for the Contentful iOS SDK.",
+  "homepage": "https://github.com/contentful/contentful-persistence.objc",
+  "license": "MIT",
+  "authors": {
+    "Boris Bügling": "boris@contentful.com"
+  },
+  "source": {
+    "git": "https://github.com/contentful/contentful-persistence.objc.git",
+    "tag": "0.5.1"
+  },
+  "social_media_url": "https://twitter.com/contentful",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "6.0",
+    "osx": "10.8"
+  },
+  "dependencies": {
+    "ContentfulDeliveryAPI": [
+      "~> 1.9.4"
+    ]
+  },
+  "default_subspecs": "CoreData",
+  "subspecs": [
+    {
+      "name": "CoreData",
+      "frameworks": "CoreData",
+      "source_files": "Code/CoreData*.{h,m}",
+      "ios": {
+        "source_files": "Code/UIKit"
+      }
+    },
+    {
+      "name": "Realm",
+      "dependencies": {
+        "Realm": [
+          "~> 0.98.0"
+        ]
+      },
+      "source_files": "Code/Realm*.{h,m}",
+      "platforms": {
+        "ios": "7.0",
+        "osx": "10.9"
+      }
+    }
+  ]
+}

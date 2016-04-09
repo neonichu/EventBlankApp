@@ -38,6 +38,8 @@ pod 'Kingfisher'
 
 pod 'Curry'
 
+pod 'ContentfulPersistence/Realm', :git => 'https://github.com/contentful/contentful-persistence.objc'
+
 post_install do | installer |
     require 'fileutils'
     FileUtils.cp_r('Pods/Target Support Files/Pods/Pods-acknowledgements.plist', 'Pods-acknowledgements.plist', :remove_destination => true)

@@ -1,0 +1,1 @@
+../../../ContentfulPersistence/Code/RealmAsset.h

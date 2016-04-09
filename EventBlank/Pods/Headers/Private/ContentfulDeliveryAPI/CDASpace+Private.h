@@ -1,0 +1,1 @@
+../../../ContentfulDeliveryAPI/Code/CDASpace+Private.h

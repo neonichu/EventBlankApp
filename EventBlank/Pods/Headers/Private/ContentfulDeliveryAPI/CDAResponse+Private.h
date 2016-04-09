@@ -1,0 +1,1 @@
+../../../ContentfulDeliveryAPI/Code/CDAResponse+Private.h

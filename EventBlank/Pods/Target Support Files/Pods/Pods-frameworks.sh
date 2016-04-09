@@ -85,11 +85,15 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/AFDateHelper.framework"
+  install_framework "Pods/AFNetworking.framework"
   install_framework "Pods/Alamofire.framework"
   install_framework "Pods/CWStatusBarNotification.framework"
+  install_framework "Pods/ContentfulDeliveryAPI.framework"
+  install_framework "Pods/ContentfulPersistence.framework"
   install_framework "Pods/Curry.framework"
   install_framework "Pods/DynamicColor.framework"
   install_framework "Pods/EasyAnimation.framework"
+  install_framework "Pods/ISO8601DateFormatter.framework"
   install_framework "Pods/KHTabPagerViewController.framework"
   install_framework "Pods/Kingfisher.framework"
   install_framework "Pods/MAThemeKit.framework"
@@ -113,11 +117,15 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/AFDateHelper.framework"
+  install_framework "Pods/AFNetworking.framework"
   install_framework "Pods/Alamofire.framework"
   install_framework "Pods/CWStatusBarNotification.framework"
+  install_framework "Pods/ContentfulDeliveryAPI.framework"
+  install_framework "Pods/ContentfulPersistence.framework"
   install_framework "Pods/Curry.framework"
   install_framework "Pods/DynamicColor.framework"
   install_framework "Pods/EasyAnimation.framework"
+  install_framework "Pods/ISO8601DateFormatter.framework"
   install_framework "Pods/KHTabPagerViewController.framework"
   install_framework "Pods/Kingfisher.framework"
   install_framework "Pods/MAThemeKit.framework"
