@@ -50,6 +50,21 @@ class ContentfulProvider {
         let manager = EventRealmManager(client: client)!
 
         manager.setClass(EventData.self, forEntriesOfContentTypeWithIdentifier: "event")
+        manager.setMapping([
+                "fields.title": "title",
+                "fields.subtitle": "subtitle",
+                "fields.organizer": "organizer",
+                "fields.logo": "eventLogo",
+                "fields.beginDate": "beginDate",
+                "fields.endDate": "endDate",
+                "fields.mainColor": "_mainColor",
+            ], forEntriesOfContentTypeWithIdentifier: "event")
+
+        manager.setClass(Location.self, forEntriesOfContentTypeWithIdentifier: "location")
+        manager.setClass(Session.self, forEntriesOfContentTypeWithIdentifier: "session")
+        manager.setClass(Speaker.self, forEntriesOfContentTypeWithIdentifier: "speaker")
+        manager.setClass(Text.self, forEntriesOfContentTypeWithIdentifier: "text")
+        manager.setClass(Track.self, forEntriesOfContentTypeWithIdentifier: "track")
 
         return manager
     }()
