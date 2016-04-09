@@ -37,6 +37,11 @@ extension Object {
         let results = RealmProvider.eventRealm.objects(self)
         return Array(results)
     }
+
+    static func objectsWithPredicate(predicate: NSPredicate) -> NSArray {
+        let results = RealmProvider.eventRealm.objects(self).filter(predicate)
+        return Array(results)
+    }
 }
 
 class ContentfulProvider {
