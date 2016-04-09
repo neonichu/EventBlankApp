@@ -105,7 +105,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ContentfulPersistence:
-    :commit: e96e8b623c8125669b58fe4ee3a70467baaab0ab
+    :commit: 42c921928bdd5f47abb6a8c50fea8f1b75324733
     :git: https://github.com/contentful/contentful-persistence.objc
   Pager:
     :commit: b1c61eeafd4c4ca1e10c991f42e3c67738592c7c
