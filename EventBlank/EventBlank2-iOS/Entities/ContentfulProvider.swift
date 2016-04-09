@@ -54,9 +54,41 @@ class ContentfulProvider {
         return manager
     }()
 
+    private func fetchAsset(asset: Asset?, completion: (UIImage) -> ()) {
+        guard let asset = asset, urlString = asset.url, url = NSURL(string: urlString) else { return }
+
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url) { data, _, _ in
+            if let data = data, image = UIImage(data: data) {
+                dispatch_async(dispatch_get_main_queue()) {
+                    completion(image)
+                }
+            }
+        }
+
+        task.resume()
+    }
+
     func sync() {
         manager.performSynchronizationWithSuccess({
             NSNotificationCenter.defaultCenter().postNotification(NSNotification(name: kDidReplaceEventFileNotification, object: nil))
+
+            RealmProvider.eventRealm.objects(EventData).forEach { data in
+                if data.logo != nil { return }
+                self.fetchAsset(data.eventLogo) { image in
+                    try! RealmProvider.eventRealm.write {
+                        data.logo = image
+                    }
+                }
+            }
+
+            RealmProvider.eventRealm.objects(Speaker).forEach { data in
+                if data.photo != nil { return }
+                self.fetchAsset(data.speakerPhoto) { image in
+                    try! RealmProvider.eventRealm.write {
+                        data.photo = image
+                    }
+                }
+            }
         }) { (_, error) in
             print("Error: \(error)")
         }
