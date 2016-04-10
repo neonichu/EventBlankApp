@@ -55,8 +55,6 @@ class ContentfulProvider {
                 "fields.subtitle": "subtitle",
                 "fields.organizer": "organizer",
                 "fields.logo": "eventLogo",
-                "fields.beginDate": "beginDate",
-                "fields.endDate": "endDate",
                 "fields.mainColor": "_mainColor",
             ], forEntriesOfContentTypeWithIdentifier: "event")
 

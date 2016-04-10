@@ -27,8 +27,6 @@ class RealmProvider {
         
         RealmProvider.eventRealm = try! Realm(configuration: eventConfig)
         RealmProvider.appRealm = try! Realm(configuration: appConfig)
-        
-        stubbyRealmData()
     }
     
     private static func loadConfig(name: String, path targetPath: FilePath, defaultPath: FilePath? = nil, preferNewerSourceFile: Bool = false, readOnly: Bool = false) -> Realm.Configuration? {
